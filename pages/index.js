@@ -1,7 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 import Nav from '../components/nav'
+
+import 'chramework/dist/main.css'
+import { Button } from 'chramework'
 
 const Home = () => (
   <div>
@@ -18,24 +20,9 @@ const Home = () => (
       </p>
 
       <div className='row'>
-        <Link href='https://github.com/zeit/next.js#getting-started'>
-          <a className='card'>
-            <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next.js on GitHub and in their examples</p>
-          </a>
-        </Link>
-        <Link href='https://github.com/zeit/next.js/tree/master/examples'>
-          <a className='card'>
-            <h3>Examples &rarr;</h3>
-            <p>Find other example boilerplates on the Next.js GitHub</p>
-          </a>
-        </Link>
-        <Link href='https://github.com/zeit/next.js'>
-          <a className='card'>
-            <h3>Create Next App &rarr;</h3>
-            <p>Was this tool helpful? Let us know how we can improve it!</p>
-          </a>
-        </Link>
+        <Button text="Getting Started" href='https://github.com/zeit/next.js#getting-started' arrow bordered />
+        <Button text="Examples" href='https://github.com/zeit/next.js/tree/master/examples' arrow bordered />
+        <Button text="Create Next App" href='https://github.com/zeit/next.js' arrow bordered />
       </div>
     </div>
 

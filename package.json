@@ -8,8 +8,12 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "next": "9.0.3",
     "react": "16.8.6",
     "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "chramework": "^1.1.106"
   }
 }
