@@ -6,7 +6,7 @@ node_js:
 cache: npm
 
 script:
-  - npm run build
+  - yarn build
   - zip -r $TRAVIS_COMMIT . -x 'node_modules/*' -x '.git/*'
   - mkdir -p build
   - mv $TRAVIS_COMMIT.zip build/travis-$TRAVIS_COMMIT.zip
