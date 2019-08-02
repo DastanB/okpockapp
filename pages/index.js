@@ -8,7 +8,7 @@ import { Button } from 'chramework'
 const Home = () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>Okpock | Home</title>
     </Head>
 
     <Nav />
